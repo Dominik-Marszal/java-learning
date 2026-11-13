@@ -10,7 +10,9 @@ jobs:
     steps:
       - name: Say hello
         run: echo "Hello from the runner"
-      - name: Several commands in one step
+      - name: Inspect the runner
         run: |
-          date
-          whoami
+          pwd
+          ls -la
+          uname -a
+          java -version
